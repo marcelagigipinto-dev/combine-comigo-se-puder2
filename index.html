@@ -42,7 +42,38 @@
             <button id="draw-card-btn" class="btn-primary">Sortear Carta 🎲</button>
         </div>
         <div id="game-board">
-            <!-- As casas do tabuleiro serão geradas via JavaScript -->
+            <div class="game-board-grid">
+                <!-- Linha 1 -->
+                <div class="cell">PLANEJE UM CAFÉ DA MANHÃ NA CAMA PARA SEU PARCEIRO NA PRÓXIMA SEMANA OU RECU...</div>
+                <div class="cell">ESCOLHA UMA MÚSICA E FAÇAM UM MINI KARAOKÊ.</div>
+                <div class="cell">FAÇA UMA LISTA DE TRÊS COISAS NOVAS QUE VOCÊS GOSTARIAM DE TENTAR COMO CASAL.</div>
+                <div class="cell special">VOLTE 2 CASAS</div>
+                <div class="cell">FAÇA UMA MASSAGEM EM SEU PARCEIRO OU MOVA 2 CASAS PARA TRÁS</div>
+                <!-- Linha 2 -->
+                <div class="cell">VOLTE 3 CASAS</div>
+                <div class="cell empty"></div>
+                <div class="cell empty"></div>
+                <div class="cell empty"></div>
+                <div class="cell">FAÇAM UM DESENHO OU RABISCO UM DO OUTRO EM MENOS DE UM MINUTO.</div>
+                <!-- Linha 3 -->
+                <div class="cell">DEIXE SEU PARCEIRO ESCOLHER ALGO QUE VOCÊS FARÃO JUNTOS AMANHÃ.</div>
+                <div class="cell empty"></div>
+                <div class="cell category"><span class="category-script">Romance</span></div>
+                <div class="cell empty"></div>
+                <div class="cell">CRIE UM APERTO DE MÃO SECRETO ESPECIAL SÓ PARA VOCÊS DOIS.</div>
+                <!-- Linha 4 -->
+                <div class="cell">FAÇA SEU PARCEIRO RIR EM 3 MINUTOS OU VOLTE 5 CASAS</div>
+                <div class="cell empty"></div>
+                <div class="cell category"><span class="category-script">Fantasia</span></div>
+                <div class="cell empty"></div>
+                <div class="cell">ESCOLHA UM PAÍS E PLANEJEM UMA VIAGEM IMAGINÁRIA, DISCUTINDO O QUE FARIAM LÁ.</div>
+                <!-- Linha 5 -->
+                <div class="cell start">COMEÇO<br>FIM</div>
+                <div class="cell">FAÇA UM ELOGIO SINCERO SOBRE ALGO QUE SEU PARCEIRO FEZ RECENTEMENTE.</div>
+                <div class="cell category"><span class="category-script">Cotidiano</span></div>
+                <div class="cell">CONTE AO SEU PARCEIRO UMA LEMBRANÇA ESPECIAL QUE VOCÊ TEM DELE.</div>
+                <div class="cell special">FAÇA UM DESFILE EM SUA ROUPA ÍNTIMA OU VOLTE 5 CASAS</div>
+            </div>
         </div>
         <div class="player-trackers">
             <div class="player-tracker player1-tracker">
@@ -164,57 +195,5 @@
 
     <script src="script.js"></script>
 
-    <section class="game-board-section">
-      <div class="game-board">
-        <!-- Linha superior -->
-        <div class="board-row">
-          <div class="board-cell">PLANEJE UM CAFÉ DA MANHÃ NA CAMA PARA SEU PARCEIRO NA PRÓXIMA SEMANA OU RECU...</div>
-          <div class="board-cell">ESCOLHA UMA MÚSICA E FAÇAM UM MINI KARAOKÊ.</div>
-          <div class="board-cell">FAÇA UMA LISTA DE TRÊS COISAS NOVAS QUE VOCÊS GOSTARIAM DE TENTAR COMO CASAL.</div>
-          <div class="board-cell special">VOLTE 2 CASAS</div>
-          <div class="board-cell">FAÇA UMA MASSAGEM EM SEU PARCEIRO OU MOVA 2 CASAS PARA TRÁS</div>
-          <div class="board-cell">FAÇAM UM DESENHO OU RABISCO UM DO OUTRO EM MENOS DE UM MINUTO.</div>
-          <div class="board-cell">CRIE UM APERTO DE MÃO SECRETO ESPECIAL SÓ PARA VOCÊS DOIS.</div>
-          <div class="board-cell">ESCOLHA UM PAÍS E PLANEJEM UMA VIAGEM IMAGINÁRIA, DISCUTINDO O QUE FARIAM LÁ.</div>
-          <div class="board-cell start">COMEÇO<br>FIM</div>
-        </div>
-        <!-- Coluna esquerda -->
-        <div class="board-col board-col-left">
-          <div class="board-cell special">VOLTE 3 CASAS</div>
-          <div class="board-cell">DEIXE SEU PARCEIRO ESCOLHER ALGO QUE VOCÊS FARÃO JUNTOS AMANHÃ.</div>
-          <div class="board-cell">FAÇA SEU PARCEIRO RIR EM 3 MINUTOS OU VOLTE 5 CASAS</div>
-          <div class="board-cell">ESCOLHA UMA PALAVRA PARA DESCREVER COMO VOCÊ SE SENTE SOBRE SEU PARCEIRO AGORA.</div>
-          <div class="board-cell">FAÇA UM ELOGIO SINCERO SOBRE ALGO QUE SEU PARCEIRO FEZ RECENTEMENTE.</div>
-          <div class="board-cell special">VOLTE 3 CASAS</div>
-        </div>
-        <!-- Coluna direita -->
-        <div class="board-col board-col-right">
-          <div class="board-cell">CANTE A MÚSICA FAVORITA DO SEU PARCEIRO OU RECU...</div>
-          <div class="board-cell">CAPTURE UM MOMENTO ESPECIAL COM SEU PARCEIRO OU VOLTE 2 CASAS.</div>
-          <div class="board-cell">FAÇA UMA LISTA DE 5 COISAS QUE VOCÊ AMA NO SEU PARCEIRO.</div>
-          <div class="board-cell">CONCEDA A SEU PARCEIRO UM DESEJO ESPECIAL OU RECU...</div>
-          <div class="board-cell">CONTE AO SEU PARCEIRO UMA LEMBRANÇA ESPECIAL QUE VOCÊ TEM DELE.</div>
-          <div class="board-cell special">FAÇA UM DESFILE EM SUA ROUPA ÍNTIMA OU VOLTE 5 CASAS</div>
-        </div>
-        <!-- Linha inferior -->
-        <div class="board-row">
-          <div class="board-cell">FAÇA UM BRINDE COM SEU PARCEIRO, DESTACANDO ALGO PELO QUAL VOCÊ É GRATO.</div>
-          <div class="board-cell">ESCREVA UM DESEJO PARA O FUTURO DO RELACIONAMENTO DE VOCÊS.</div>
-          <div class="board-cell special">VOLTE 3 CASAS</div>
-          <div class="board-cell">PROMETA AO SEU PARCEIRO UMA MASSAGEM MAIS TARDE ESTA NOITE OU RECU...</div>
-          <div class="board-cell">DÊ AO SEU PARCEIRO UM BEIJO DE 60 SEGUNDOS.</div>
-          <div class="board-cell">ESCREVA UM POEMA CURTO OU UMA RIMA SOBRE SEU PARCEIRO.</div>
-          <div class="board-cell">FAÇA UM DESENHO OU RABISCO UM DO OUTRO EM MENOS DE UM MINUTO.</div>
-          <div class="board-cell">FAÇA UMA LISTA DE TRÊS COISAS NOVAS QUE VOCÊS GOSTARIAM DE TENTAR COMO CASAL.</div>
-          <div class="board-cell">ESCOLHA UMA MÚSICA E FAÇAM UM MINI KARAOKÊ.</div>
-        </div>
-        <!-- Categorias centrais -->
-        <div class="board-categories">
-          <div class="category-box"><span class="category-script">Romance</span></div>
-          <div class="category-box"><span class="category-script">Fantasia</span></div>
-          <div class="category-box"><span class="category-script">Cotidiano</span></div>
-        </div>
-      </div>
-    </section>
   </body>
 </html>
